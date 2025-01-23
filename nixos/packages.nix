@@ -62,6 +62,10 @@
     pciutils
     usbutils
     ags
+    efibootmgr
+    os-prober
+    bat
+    duplicati
 
     # === NETWORKING TOOLS === #
     mtr
@@ -102,6 +106,9 @@
     fabric-ai
     siyuan
     vivaldi
+    anki
+    xournalpp
+    zathura
 
     # ====== MONITORING ====== #
     btop
@@ -118,7 +125,6 @@
     protonup
     discord
     lutris
-    obs-studio
     piper
     solaar
 
@@ -140,16 +146,27 @@
     faust
     sonic-pi
     processing
+    vlc
+    obs-studio
+    pamixer
+    feh
+    flameshot
 #    natron
 
     # ======= BROWSERS ======= #
     firefox-devedition
     brave
     tor
+    tor-browser
     chromium
     google-chrome
 
     # ==== SECURITY TOOLS ==== #
+    social-engineer-toolkit
+    ffuf
+    wordlists
+    ropgadget
+    netcat-openbsd
     wireshark
     burpsuite
     zap
@@ -177,12 +194,29 @@
     responder
     wpscan
     tcpdump
+    gef
+    valgrind
+    pwndbg
+    stripe-cli
+    gobject-introspection
+
+    # ====== DATABASES ====== #
+    postgresql_17
 
     # ===== CONTAINERS ====== #
     docker_27
     devbox
     virtualbox
     kubectl
+    qemu
+    virt-manager
+    libvirt
+    virt-viewer
+    bridge-utils
+    dnsmasq
+    ebtables
+    iptables
+    OVMF.fd
 
     # ======== SHELLS ======= #
     zsh
@@ -193,6 +227,10 @@
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-autocomplete
+    oh-my-zsh
+    oh-my-posh
+    oh-my-git
+    oh-my-fish
 
     # ==== TEXT EDITORS ===== #
     vim
@@ -203,6 +241,84 @@
     vscodium
     code-cursor
 
-    
+    # ====== TERMINALS ====== #
+        alacritty
+    kitty
+    warp-terminal
+    ghostty
+
+    # = FORMATTERS & LINTERS =#
+    alejandra
+    deadnix
+    nodePackages.prettier
+    shellcheck
+    shfmt
+    statix
+    black
+
+    # == LANGUAGE SERVERS === #
+    nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    nodePackages.yaml-language-server
+    nil # nix
+    elixir_ls
+    metals
+    crystalline
+    solargraph
+    nodePackages.typescript-language-server
+    python3Packages.python-lsp-server
+    clang-tools
+    solargraph
+
+    # ==== CORE LANGUAGES === #
+    rustup
+    rustc
+    ruby
+    crystal_1_9
+    erlang
+    nodejs_23
+    go
+    elixir_1_18
+    # beam.packages.erlangR26.erlang
+    # beam.packages.erlangR26.elixir
+    dart
+    gleam
+    scala
+    lua
+    nim
+
+    # ======== PYTHON ====== #
+    python3Full
+    python312Packages.scrapy
+    pipx
+    python312Packages.cli-helpers
+    python312Packages.netifaces
+    python312Packages.pip
+    poetry
+
+    # ======= RUST ========= #
+    cargo-cache
+    cargo-expand
+
+    # ====== WAYLAND ======= #
+    wl-clipboard
+    polybar
+    xwayland
+    wdisplays
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts
+    karla
+    julia-mono
+    fantasque-sans-mono
+    mononoki
+    udev-gothic-nf
+    hackgen-nf-font
+    newcomputermodern
+    font-awesome
+    powerline-fonts
+    powerline-symbols
+    noto-fonts-emoji
+    noto-fonts
   ];
 }
