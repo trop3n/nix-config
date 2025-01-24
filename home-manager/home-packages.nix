@@ -5,7 +5,7 @@
     permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
   };
 
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
 
     # ====== ARCHIVES ======== #
     zip
@@ -220,7 +220,6 @@
     # ======== SHELLS ======= #
     zsh
     fish
-    nushell
     bash-completion
     bash-preexec
     zsh-completions

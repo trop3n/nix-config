@@ -1,9 +1,9 @@
 {
-    programs.oh-my-posh = {
+  programs.oh-my-posh = {
     enable = true;
     enableBashIntegration = true;
     enableFishIntegration = false;
-    enableZshIntegration = true;
+    enableZshIntegration = false;
     useTheme = "tiwahu";
   };
 }

@@ -12,7 +12,7 @@
   # Stylix configuration
   stylix = {
     enable = true;
-    image = ./wallhaven-jx2rxw.jpg;
+    image = ./assets/wallhaven-jx2rxw.jpg;
     base16Scheme = {
       base00 = "#1d252c";  # Background
       base01 = "#2a343d";  # Lighter Background
@@ -60,7 +60,7 @@
     nixos-icons.enable = true;
     chromium.enable = true;
     gtk.enable = true;
-    fish.enable = true;
+    fish.enable = false;
   #  nixvim.enable = true;
   };
 
@@ -219,7 +219,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  services.tailscale.enable = true;
+#  services.tailscale.enable = true;
   # Open ports in the firewall.
   networking.firewall.trustedInterfaces = [ "vibr0" ];
   # networking.firewall.allowedTCPPorts = [ ... ];
@@ -258,7 +258,7 @@
     '';
   };
 
-  services.printing.enable = true;
+  services.printing.enable = false;
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;

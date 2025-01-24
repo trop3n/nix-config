@@ -7,7 +7,7 @@
     ./direnv.nix
     ./fish.nix
     ./fzf.nix
-    ./gdb.nix
+#    ./gdb.nix
     ./ghostty.nix
     ./git.nix
     ./helix.nix
@@ -20,6 +20,6 @@
     ./zed.nix
     ./zellij.nix
     ./zoxide.nix
-    ./zsh/nix
+    ./zsh.nix
   ];
 }

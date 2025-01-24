@@ -1,5 +1,6 @@
+{ pkgs, lib, ... }:
 {
-    programs.helix = {
+  programs.helix = {
     enable = true;
     settings = {
       editor.cursor-shape = {

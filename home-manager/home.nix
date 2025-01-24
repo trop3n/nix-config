@@ -4,6 +4,7 @@
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
     ./modules/default.nix
+#    ./home-packages.nix
   ];
 
   programs.home-manager.enable = true;
@@ -30,7 +31,7 @@
     targets = {
       helix.enable = true;
       gtk.enable = true;
-      fish.enable = true;
+      fish.enable = false;
       fzf.enable = true;
       kde.enable = true;
       lazygit.enable = true;

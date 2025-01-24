@@ -1,3 +1,4 @@
+{ pkgs, lib, ... }:
 {
   programs.zsh = {
     enable = true;
@@ -22,19 +23,19 @@
           sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
         };
       }
-#    {
-#         name = "geometry";
-#         src = pkgs.fetchFromGitHub {
-#           owner = "geometry-zsh";
-#           repo = "geometry";
-#           rev = "fdff57bde4afb43beda73a14dea7738961f99bc2";
-#           sha256 = "D7WJJQIlAEs+ilWvQaZzmJJJ25hdkAf+nttG5Fhddgo=";
-#         };
-#       }
+      {
+        name = "geometry";
+        src = pkgs.fetchFromGitHub {
+          owner = "geometry-zsh";
+          repo = "geometry";
+          rev = "fdff57bde4afb43beda73a14dea7738961f99bc2";
+          sha256 = "D7WJJQIlAEs+ilWvQaZzmJJJ25hdkAf+nttG5Fhddgo=";
+        };
+      }
     ];
     oh-my-zsh = {
       enable = true;
-      theme = "af-magic";
+      # theme = "af-magic";
       plugins = [
          "docker"
          "kubectl"
@@ -47,7 +48,7 @@
          "python"
          "rust"
          "poetry-env"
-         "starship"
+#         "starship"
          "sudo"
          "zoxide"
          "nmap"
@@ -71,9 +72,10 @@
       gp = "git push origin master";
     };
     initExtra = ''
-#       # Disable Git checks in non-Git directories for geometry
-#       GEOMETRY_PROMPT_PLUGINS=(exec_time git)
-
+    # Configure Geometry prompt plugins
+      GEOMETRY_PROMPT_PLUGINS=(exec_time git)
+      autoload -Uz promptinit && promptinit
+      prompt geometry
       # History options
       HISTSIZE="10000"
       SAVEHIST="10000"

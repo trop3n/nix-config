@@ -3,8 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
-    stylix.url = "github:danth/stylix/release-24.05";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    stylix.url = "github:danth/stylix/release-24.11";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
@@ -36,14 +36,23 @@
         ./nixos/configuration.nix
         inputs.nixvim.nixosModules.nixvim
         inputs.stylix.nixosModules.stylix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = { inherit inputs; };
+            users.jason = import ./home-manager/home.nix;
+          };
+        }
       ];
     };
-    homeConfigurations.jason = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [
-        ./home-manager/home.nix
-      ];
-    };
+    # homeConfigurations.jason = home-manager.lib.homeManagerConfiguration {
+    #   pkgs = nixpkgs.legacyPackages.${system};
+    #   modules = [
+    #     ./home-manager/home.nix
+    #   ];
+    # };
     
     # nixosConfigurations = {
     #   nixos = nixpkgs.lib.nixosSystem {

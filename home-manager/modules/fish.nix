@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
     programs.fish = {
     enable = true;
@@ -11,8 +12,6 @@
           sha256 = "sha256-f/CUR0vhMJ1sZgztmVTPvmsAgp0kjFov843Mabdzvqo=";
         }
         + "/extras/kanagawa.fish")}
-
-      set -U fish_greeting
     '';
     functions = {
         refresh = "source $HOME/.config/fish/config.fish";
