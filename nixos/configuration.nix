@@ -1,4 +1,4 @@
-{ config, pkgs, nixvim, home-manager, ... }:
+{ config, pkgs, nixvim, home-manager, wallpapers, ... }:
 
 {
   imports = [
@@ -12,7 +12,7 @@
   # Stylix configuration
   stylix = {
     enable = true;
-    image = ./assets/wallhaven-jx2rxw.jpg;
+    image = wallpapers + "/wallhaven-jx2rxw.jpg";
     base16Scheme = {
       base00 = "#1d252c";  # Background
       base01 = "#2a343d";  # Lighter Background

@@ -26,6 +26,7 @@
 
     nixosConfigurations.jason = nixpkgs.lib.nixosSystem {
       specialArgs = {
+        wallpapers = "${self}/assets/wallpapers";
         pkgs-stable = import nixpkgs-stable {
           inherit system;
           config.allowUnfree = true;
