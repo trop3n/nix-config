@@ -238,7 +238,6 @@
     sublime4
     helix
     vscodium
-    code-cursor
 
     # ====== TERMINALS ====== #
         alacritty
@@ -274,7 +273,7 @@
     ruby
     crystal_1_9
     erlang
-    nodejs_23
+#    nodejs_23
     go
     elixir_1_18
     # beam.packages.erlangR26.erlang
