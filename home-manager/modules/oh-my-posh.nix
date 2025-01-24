@@ -4,6 +4,6 @@
     enableBashIntegration = true;
     enableFishIntegration = false;
     enableZshIntegration = true;
-    useTheme = "space";
+    useTheme = "tiwahu";
   };
 }

@@ -2,6 +2,7 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
+    plugins = [ pkgs. bashPlugins.syntax-highlighting ];
 
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"

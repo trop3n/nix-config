@@ -45,7 +45,6 @@
     sl
     rustcat
     doggo
-    dog
     dig
     rclone
     tree
