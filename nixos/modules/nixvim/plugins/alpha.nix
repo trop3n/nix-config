@@ -18,6 +18,7 @@
             "                               Jason Kimm                              "
             "                                                                       "
           ];
+        }
         {
           type = "padding";
           val = 2;

@@ -307,7 +307,44 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerd-fonts
+    nerd-fonts._0xproto
+    nerd-fonts.hack
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.ubuntu
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.iosevka
+    nerd-fonts.iosevka-term
+    nerd-fonts.iosevka-term-slab
+    nerd-fonts.blex-mono
+    nerd-fonts.inconsolata
+    nerd-fonts.agave
+    nerd-fonts.anonymice
+    nerd-fonts.arimo
+    nerd-fonts.aurulent-sans-mono
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.code-new-roman
+    nerd-fonts.cousine
+    nerd-fonts.envy-code-r
+    nerd-fonts.geist-mono
+    nerd-fonts.fira-mono
+    nerd-fonts.go-mono
+    nerd-fonts.hasklug
+    nerd-fonts.lilex
+    nerd-fonts.meslo-lg
+    nerd-fonts.monaspace
+    nerd-fonts.monofur
+    nerd-fonts.noto
+    nerd-fonts.mplus
+    nerd-fonts.overpass
+    nerd-fonts.profont
+    nerd-fonts.recursive-mono
+    nerd-fonts.roboto-mono
+    nerd-fonts.sauce-code-pro
+    nerd-fonts.terminess-ttf
+    nerd-fonts.zed-mono
+    nerd-fonts.space-mono
+    nerd-fonts.bitstream-vera-sans-mono
     karla
     julia-mono
     fantasque-sans-mono

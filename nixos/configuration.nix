@@ -219,7 +219,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
+  services.tailscale.enable = true;
   # Open ports in the firewall.
   networking.firewall.trustedInterfaces = [ "vibr0" ];
   # networking.firewall.allowedTCPPorts = [ ... ];
@@ -265,7 +265,7 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
-    alsa.support32bit = true;
+  #  alsa.support32bit = true;
     pulse.enable = true;
   };
 
@@ -306,7 +306,7 @@
 
   services.openssh.enable = true;
 
-  virtualization.docker.enable = true;
+  virtualisation.docker.enable = true;
 
   system.stateVersion = "24.11";
 }
