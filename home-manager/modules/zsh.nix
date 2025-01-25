@@ -7,6 +7,7 @@
     plugins = [
         {
           name = "zsh-async";
+          file = "async.zsh";
           src = pkgs.fetchFromGitHub {
             owner = "mafredri";
             repo = "zsh-async";
@@ -25,6 +26,7 @@
       }
       {
         name = "geometry";
+        file = "geometry.zsh";
         src = pkgs.fetchFromGitHub {
           owner = "geometry-zsh";
           repo = "geometry";
@@ -35,7 +37,6 @@
     ];
     oh-my-zsh = {
       enable = true;
-      # theme = "af-magic";
       plugins = [
          "docker"
          "kubectl"
@@ -47,7 +48,6 @@
          "poetry"
          "python"
          "rust"
-         "poetry-env"
 #         "starship"
          "sudo"
          "zoxide"
