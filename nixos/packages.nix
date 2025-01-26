@@ -103,6 +103,8 @@
     glow
     obsidian
     fabric-ai
+    ollama
+    pinokio
     siyuan
     vivaldi
     anki
@@ -201,6 +203,7 @@
 
     # ====== DATABASES ====== #
     postgresql_17
+    sqlite
 
     # ===== CONTAINERS ====== #
     docker_27
