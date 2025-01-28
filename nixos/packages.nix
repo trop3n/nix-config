@@ -110,6 +110,7 @@
     anki
     xournalpp
     zathura
+    glance
 
     # ====== MONITORING ====== #
     btop
@@ -152,6 +153,7 @@
     pamixer
     feh
     flameshot
+    cables
 #    natron
 
     # ======= BROWSERS ======= #
@@ -200,6 +202,7 @@
     pwndbg
     stripe-cli
     gobject-introspection
+    ghunt
 
     # ====== DATABASES ====== #
     postgresql_17
