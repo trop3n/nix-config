@@ -281,7 +281,7 @@
     ruby
     crystal_1_9
     erlang
-#    nodejs_23
+    nodejs_22
     go
     elixir_1_18
     # beam.packages.erlangR26.erlang
