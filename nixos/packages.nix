@@ -215,7 +215,6 @@
     binsider
     flawz
     atac
-    jwt-ui
     sttr
     age
 
