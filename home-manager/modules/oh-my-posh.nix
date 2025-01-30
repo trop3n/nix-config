@@ -4,6 +4,6 @@
     enableBashIntegration = true;
     enableFishIntegration = false;
     enableZshIntegration = false;
-    useTheme = "tiwahu";
+    useTheme = "easy-term";
   };
 }

@@ -25,6 +25,7 @@
     lldb
     ripgrep
     jq
+    fq
     yq-go
     eza
     fzf
@@ -65,6 +66,12 @@
     os-prober
     bat
     duplicati
+    wine64
+    television
+    pik 
+    gitnr
+    sampler
+    tealdeer
 
     # === NETWORKING TOOLS === #
     mtr
@@ -93,6 +100,7 @@
     cgdb
     cava
     figlet
+    astroterm
 
     # ===== NIX RELATED ====== #
     nix-output-monitor
@@ -154,6 +162,7 @@
     feh
     flameshot
     cables
+    gowall
 #    natron
 
     # ======= BROWSERS ======= #
@@ -203,6 +212,12 @@
     stripe-cli
     gobject-introspection
     ghunt
+    binsider
+    flawz
+    atac
+    jwt-ui
+    sttr
+    age
 
     # ====== DATABASES ====== #
     postgresql_17
