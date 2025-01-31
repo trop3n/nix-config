@@ -11,19 +11,19 @@
     };
     font = {
       normal = {
-        family = "Fantasque Sans Mono";
+        family = "RecMonoLinear Nerd Font Mono";
         style = "Regular";
       };
       bold = {
-        family = "Fantasque Sans Mono";
+        family = "RecMonoLinear Nerd Font Mono";
         style = "Bold";
       };
       italic = {
-        family = "Fantasque Sans Mono";
+        family = "RecMonoLinear Nerd Font Mono";
         style = "Italic";
       };
       bold_italic = {
-        family = "Fantasque Sans Mono";
+        family = "RecMonoLinear Nerd Font Mono";
         style = "Bold Italic";
       };
       size = lib.mkForce 10;

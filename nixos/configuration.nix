@@ -47,8 +47,8 @@
         name = "Karla";
       };
       monospace = {
-        package = pkgs.fantasque-sans-mono;
-        name = "Fantasque Sans Mono";
+        package = pkgs.nerd-fonts.recursive-mono;
+        name = "RecMonoLinear Nerd Font Mono";
       };
     };
     cursor.package = pkgs.bibata-cursors;
