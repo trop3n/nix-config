@@ -17,6 +17,7 @@
     ./todo-comments.nix
     ./transparent.nix
     ./treesitter.nix
-#    ./web-devicons.nix
+    ./web-devicons.nix
+    # ./autopairs.nix
   ];
 }

@@ -8,7 +8,7 @@
 
     opts = {
       updatetime = 100; # Faster completion
-      shell = "/home/bluecosmo/.nix-profile/bin/bash";
+      shell = "/home/jason/.nix-profile/bin/bash";
 
       relativenumber = true; # Relative line numbers
       number = true; # Display the absolute line number of the current line

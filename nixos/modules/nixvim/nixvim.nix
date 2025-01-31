@@ -3,6 +3,7 @@
     ./opts.nix
     ./keymaps.nix
     ./autocmds.nix
+    # ./file_types.nix
     ./plugins/all.nix
   ];
 

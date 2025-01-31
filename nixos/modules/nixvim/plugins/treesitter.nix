@@ -12,22 +12,7 @@
         enable = true;
       };
     };
-
-    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-      bash
-      c
-      json
-      lua
-      make
-      markdown
-      nix
-      python
-      regex
-      toml
-      vim
-      vimdoc
-      xml
-      yaml
-    ];
+    nixvimInjections = true;
+    grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
 }

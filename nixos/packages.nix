@@ -137,6 +137,10 @@
     lutris
     piper
     solaar
+    torzu
+    ryujinx
+    simple64
+    desmume
 
     # ======= GAME DEV ======= #
     unityhub
@@ -222,6 +226,7 @@
     rockyou
     crackql
     dnsmap
+    altdns
 
     # ====== DATABASES ====== #
     postgresql_17
@@ -246,6 +251,7 @@
     zsh
     fish
     nushell
+    xonsh
     bash-completion
     bash-preexec
     zsh-completions

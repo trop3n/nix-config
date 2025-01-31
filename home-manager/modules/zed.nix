@@ -23,7 +23,7 @@
       env = {
         TERM = "xterm-256color";
       };
-      font_family =  "SpaceMono Nerd Font";
+      font_family =  "RecMonoLinear Nerd Font Mono";
       font_size = 13;
       shell = {
         program = "fish";

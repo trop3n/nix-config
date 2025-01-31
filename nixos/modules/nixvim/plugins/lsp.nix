@@ -22,10 +22,15 @@
     lsp = {
       enable = true;
       servers = {
-        nil_ls.enable = true;
         clangd.enable = true;
         pylsp.enable = true;
         html.enable = true;
+        lua_ls.enable = true;
+        nil_ls.enable = true;
+        ts_ls.enable = true;
+        marksman.enable = true;
+        gopls.enable = true;
+        jsonls.enable = true;
       };
     };
   };
