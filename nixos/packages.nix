@@ -227,6 +227,7 @@
     crackql
     dnsmap
     altdns
+    proxychains
 
     # ====== DATABASES ====== #
     postgresql_17
