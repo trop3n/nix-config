@@ -217,6 +217,11 @@
     atac
     sttr
     age
+    amass
+    subfinder
+    rockyou
+    crackql
+    dnsmap
 
     # ====== DATABASES ====== #
     postgresql_17
