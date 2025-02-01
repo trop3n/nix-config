@@ -2,7 +2,7 @@
   imports = [
     ./airline.nix
     ./alpha.nix
-    ./colorscheme.nix
+    ./colorscheme/colorscheme.nix
     ./comment.nix
     ./cmp.nix
     ./floaterm.nix

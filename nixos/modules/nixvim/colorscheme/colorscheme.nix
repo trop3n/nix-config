@@ -1,6 +1,6 @@
 { config, ... }:
 let
-  colors = import ./colors/${config.theme}.nix;
+  colors = import ./colors/citylights.nix;
 in
 {
   colorschemes = {

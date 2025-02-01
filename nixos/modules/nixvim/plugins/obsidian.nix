@@ -7,7 +7,7 @@
         min_chars = 2;
         nvim_cmp = true;
       };
-      new_notes_location = "notes_subdir"; # or "current_dir" if you want new notes created in the current directory
+      new_notes_location = "current_dir"; # or "current_dir" if you want new notes created in the current directory
       workspaces = [
         {
           name = "Main Vault 2";
