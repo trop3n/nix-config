@@ -1,8 +1,7 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  # Proxychains configuration
-  environment.etc."proxychains.conf".text = ''
+  home.file.".proxychains/proxychains.conf".text = ''
     strict_chain
     quiet_mode = no
     proxy_dns

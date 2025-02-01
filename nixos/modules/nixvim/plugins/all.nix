@@ -3,7 +3,8 @@
     ./airline.nix
     ./alpha.nix
     ./comment.nix
-    ./cmp.nix
+    # ./cmp.nix
+    ./cmp2.nix
     ./floaterm.nix
     ./harpoon.nix
     ./lsp.nix
@@ -18,6 +19,8 @@
     ./transparent.nix
     ./treesitter.nix
     ./web-devicons.nix
-    # ./autopairs.nix
+    ./autopairs.nix
+    ./cmp-copilot.nix
+    ./
   ];
 }

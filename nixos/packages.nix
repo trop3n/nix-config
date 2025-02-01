@@ -141,6 +141,7 @@
     ryujinx
     simple64
     desmume
+    libratbag
 
     # ======= GAME DEV ======= #
     unityhub
