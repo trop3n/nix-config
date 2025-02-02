@@ -134,7 +134,6 @@
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
-#   services.xserver.videoDrivers = ["nvidia"];
 #   services.xserver.displayManager.setupCommands = ''
 #       xrandr --output HDMI-1 --primary --auto --output DP-1 --right-of HDMI-1
 #   '';
@@ -158,6 +157,10 @@
     variant = "";
   };
   services.xserver.videoDrivers = ["nvidia"];
+
+  # hyprland
+  programs.hyprland.enable = true;
+  # programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -221,7 +224,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-#  services.tailscale.enable = true;
+  services.tailscale.enable = true;
   # Open ports in the firewall.
   networking.firewall.trustedInterfaces = [ "vibr0" ];
   # networking.firewall.allowedTCPPorts = [ ... ];

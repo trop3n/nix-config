@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     stylix.url = "github:danth/stylix/release-24.11";
+    hyprland.url = "github:hyprwm/Hyprland";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
@@ -18,7 +19,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nix-index-database, stylix, nixvim, flake-utils, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nix-index-database, stylix, nixvim, flake-utils, hyprland, ... }@inputs:
     
     let
       system = "x86_64-linux";

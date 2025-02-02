@@ -87,6 +87,7 @@
     rustscan
     openvpn
     inetutils
+    tailscale
 
     # ========= MISC ========= #
     cowsay
