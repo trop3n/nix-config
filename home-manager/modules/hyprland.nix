@@ -6,10 +6,16 @@
   };
 
   home.packages = with pkgs; [
+    hyprpaper
     waybar
     mako
     swaylock-effects
     wofi
     swayidle
+    swaylock-effects
+    wlogout
+    wl-clipboard
+    qt5.qtwayland
+    qt6.qtwayland
   ];
 }

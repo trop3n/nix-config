@@ -5,6 +5,7 @@
     ./broot.nix
     ./cava.nix
     ./direnv.nix
+    ./fastfetch.nix
     ./fish.nix
     ./fzf.nix
 #    ./gdb.nix
