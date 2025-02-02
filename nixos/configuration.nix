@@ -134,6 +134,7 @@
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
+#   services.xserver.videoDrivers = ["nvidia"];
 #   services.xserver.displayManager.setupCommands = ''
 #       xrandr --output HDMI-1 --primary --auto --output DP-1 --right-of HDMI-1
 #   '';
@@ -149,6 +150,7 @@
     };
   };
   services.desktopManager.plasma6.enable = true;
+
   
   # Configure keymap in X11
   services.xserver.xkb = {
