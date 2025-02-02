@@ -5,6 +5,7 @@
     ./autocmds.nix
     # ./file_types.nix
     ./plugins/all.nix
+    # ./colorscheme/colorscheme.nix
   ];
 
   programs.nixvim = {

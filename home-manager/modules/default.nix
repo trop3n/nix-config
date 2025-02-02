@@ -15,6 +15,7 @@
     ./kitty.nix
     ./lsd.nix
     ./oh-my-posh.nix
+    ./plasma.nix
     ./proxychains.nix
     ./starship.nix
     ./tmux.nix

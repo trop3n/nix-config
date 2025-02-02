@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, lib, ... }:
 let
   colors = import ./colors/citylights.nix;
 in
