@@ -8,11 +8,17 @@
       "$win" = "SUPER";
 
       monitor = [
-        "eDP-1, 1920x1080@90, 0x0, 1"
-        "DP-6, 1920x1080@90, -1920x0, 1" # left
-        "DP-5, 1920x1080@90, 0x1920, 1" # right
+        "DP-1, 1920x1080@90165 1920x0, 1"
+        "HDMI-A-1, 1920x1080@60, 0x0, 1" # left
+        "HDMI-A-2, 1920x1080@60, 0x1920, 1" # right
         # "DP-5, 1920x1080@90, 0x-1080, 1" # above
         # "DP-5, 1920x1080@90, 1080x0, 1" # below
+      ];
+
+      workspace = [
+        "1, monitor:DP-1"
+        "2, monitor:HDMI-A-1"
+        "3, monitor:HDMI-A-2"        
       ];
 
       env = [
@@ -22,6 +28,8 @@
         "XCURSOR_SIZE,36"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/Pictures/Screenshots"
+        "NIXOS_OZONE_WL, 1"
+        "NIXPKGS_ALLOW_UNFREE, 1"
       ];
 
       debug = {
@@ -46,8 +54,8 @@
         gaps_in = 5;
         gaps_out = 20;
         border_size = 3;
-        "col.active_border" = "rgba(ffffffee) rgba(ffffffee) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
+        # "col.active_border" = "rgba(ffffffee) rgba(ffffffee) 45deg";
+        # "col.inactive_border" = "rgba(595959aa)";
 
         layout = "dwindle";
 
@@ -123,7 +131,6 @@
         "duplicati-server"
         "xwaylandvideobridge"
         "waybar"
-        "flameshot"
         "nm-applet"
         "gsettings set org.gnome.desktop.interface gtk-theme 'Adapta-Nokto'"
         "wl-paste --type text --watch cliphist store"
