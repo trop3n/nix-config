@@ -12,13 +12,15 @@
     ./ghostty.nix
     ./git.nix
     ./helix.nix
-  #  ./hyprland.nix
+    ./hyprland.nix
     ./kitty.nix
     ./lsd.nix
     ./oh-my-posh.nix
     ./proxychains.nix
+    ./rofi.nix
     ./starship.nix
     ./tmux.nix
+    ./wofi.nix
     ./zed.nix
     ./zellij.nix
     ./zoxide.nix

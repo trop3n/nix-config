@@ -321,6 +321,13 @@
     nim
     devenv
 
+    # ====== GRAPHICS ====== #
+    mesa
+    glfw
+    glew
+    glslang
+    vulkan-tools
+    
     # ======== PYTHON ====== #
     python3Full
     python312Packages.scrapy
@@ -339,6 +346,20 @@
     polybar
     xwayland
     wdisplays
+    hyprland
+    swaylock
+    waybar
+    wofi
+    slurp
+    grim
+    swww
+    cliphist
+
+    # ====== WAYUTILS ====== #
+    wdisplays
+    xdg-desktop-portal
+    xdg-desktop-portal-hyprland
+    xdg-utils
   ];
 
   fonts.packages = with pkgs; [

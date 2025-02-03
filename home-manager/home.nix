@@ -37,6 +37,9 @@
       lazygit.enable = true;
       tmux.enable = true;
       zellij.enable = true;
+      waybar.enable = true;
+      rofi.enable = true;
+      hyprland.enable = true;
     };
   };
 }

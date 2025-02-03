@@ -130,6 +130,15 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
+  
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-hyprland
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
+  };
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
@@ -159,8 +168,8 @@
   services.xserver.videoDrivers = ["nvidia"];
 
   # hyprland
-  programs.hyprland.enable = true;
-  # programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  # programs.hyprland.enable = true;
+
 
   hardware.nvidia = {
     modesetting.enable = true;
