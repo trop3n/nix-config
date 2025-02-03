@@ -11,7 +11,7 @@
 #    ./gdb.nix
     ./ghostty.nix
     ./git.nix
-    ./helix.nix
+    ./helix/default.nix
     ./hyprland.nix
     ./kitty.nix
     ./lsd.nix
