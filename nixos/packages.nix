@@ -230,6 +230,7 @@
     dnsmap
     altdns
     proxychains
+    python312Packages.dirsearch
 
     # ====== DATABASES ====== #
     postgresql_17
