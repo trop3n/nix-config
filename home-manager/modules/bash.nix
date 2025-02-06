@@ -7,7 +7,16 @@
 
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+      if [ -f ${pkgs.blesh}/share/blesh/ble.sh ]; then
+        source ${pkgs.blesh}/share/blesh/ble.sh
+      fi
     '';
+
+    initExtra = ''
+      [ -f "${pkgs.fzf}/share/fzf/shell/key-bindings.bash" ] && source "${pkgs.fzf}/share/fzf/shell/key-bindings.bash"
+      [ -f "${pkgs.fzf}/share/fzf/shell/completion.bash" ] && source "${pkgs.fzf}/share/fzf/shell/completion.bash"
+    '';
+
     # set some aliases, feel free to add more or remove some
     shellAliases = {
       k = "kubectl";

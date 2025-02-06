@@ -120,6 +120,7 @@
     xournalpp
     zathura
     glance
+    mermaid-cli
 
     # ====== MONITORING ====== #
     btop
@@ -258,6 +259,8 @@
     xonsh
     bash-completion
     bash-preexec
+    bashInteractive
+    blesh
     zsh-completions
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -337,6 +340,7 @@
     python312Packages.netifaces
     python312Packages.pip
     poetry
+    uv
 
     # ======= RUST ========= #
     cargo-cache
