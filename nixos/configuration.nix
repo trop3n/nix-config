@@ -294,6 +294,13 @@
 
   programs.firefox.enable = true;
 
+  programs.flutter = {
+    enable = true;
+    user = "jason";
+    enableAdb = true;
+    addtoKvmGroup = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w"
