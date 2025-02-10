@@ -7,6 +7,7 @@
     ./direnv.nix
     ./fastfetch.nix
     ./fish.nix
+    # ./flutter.nix
     ./fzf.nix
 #    ./gdb.nix
     ./ghostty.nix

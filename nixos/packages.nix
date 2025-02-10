@@ -232,6 +232,7 @@
     altdns
     proxychains
     python312Packages.dirsearch
+    # smbclient-ng
 
     # ====== DATABASES ====== #
     postgresql_17

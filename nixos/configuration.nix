@@ -294,12 +294,12 @@
 
   programs.firefox.enable = true;
 
-  programs.flutter = {
-    enable = true;
-    user = "jason";
-    enableAdb = true;
-    addtoKvmGroup = true;
-  };
+  # programs.flutter = {
+  #   enable = true;
+  #   user = "jason";
+  #   enableAdb = true;
+  #   addtoKvmGroup = true;
+  # };
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
