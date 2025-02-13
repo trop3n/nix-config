@@ -232,6 +232,7 @@
     altdns
     proxychains
     python312Packages.dirsearch
+    mitmproxy
     # smbclient-ng
 
     # ====== DATABASES ====== #
