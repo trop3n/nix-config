@@ -5,8 +5,8 @@
     buffer_font_family = "mononoki";
     load_direnv = "direct";
     theme = {
-      mode = "system";
-      light = "One Light";
+      mode = "dark";
+      light = "City Lights";
       dark = "City Lights";
     };
     terminal = {
