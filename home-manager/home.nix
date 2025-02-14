@@ -40,6 +40,7 @@
       waybar.enable = true;
       rofi.enable = true;
       hyprland.enable = true;
+      nixvim.enable = true;
     };
   };
 }
