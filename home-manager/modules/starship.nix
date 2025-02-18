@@ -23,7 +23,7 @@
       git_branch.style = "242";
       directory.style = "blue";
       directory.truncate_to_repo = false;
-      directory.truncation_length = 8;
+      directory.truncation_length = 2;
       directory.format = "[$path]($style) ";
       buf = {
         symbol = " ";
