@@ -14,10 +14,10 @@
         style_root = "blue bold";
         show_always = true;
         format = "[$user]($style_user)";
-        character = {
-          success_symbol = "[➜](bold green)";
-          error_symbol = "[➜](bold red)";
-        };
+        # character = {
+        #   success_symbol = "[➜](bold green)";
+        #   error_symbol = "[➜](bold red)";
+        # };
       };
       hostname = {
         style = "bold cyan";
